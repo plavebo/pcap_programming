@@ -24,7 +24,7 @@ void packet_handler(unsigned char *data, const struct pcap_pkthdr *packetHeader,
     
     if (length > 0) {
         printf("Message: ");
-        for (int i = 0; i < length && i < 20; i++) {
+        for (int i = 0; i < length && i < 30; i++) {
             printf("%02X ", packet[offset + i]);
         }
         printf("\n");
